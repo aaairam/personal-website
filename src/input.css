@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    width:100%;
+    margin:0 auto;
+    padding: .6rem 1.5rem;
+}
+
+html{
+    overflow-x:hidden;
+}
+
+@layer components{
+    .toggle_menu span{
+        width: 2rem;
+        height: .2rem;
+        background-color: white;
+        display: block;
+        border-radius: 3rem;
+        translate: .5 ease;
+    }
+    .toggle_menu span:nth-child(2){
+        margin: .2rem 0;
+    }
+
+    .toggle_menu.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[225deg] ease-out duration-[.5s];
+    }
+
+    .toggle_menu.open span:nth-child(2){
+        @apply opacity-0;
+    }
+
+    .toggle_menu.open span:last-child{
+        @apply translate-x-0 translate-y-[-3px] rotate-[-225deg] ease-out duration-[.5s];
+    }
+
+    .header_icons ul a{
+        @apply justify-center items-center rounded-full bg-pink cursor-pointer p-[.5rem] hover:text-white
+    }
+
+    .header_nav {
+        @apply right-[-70%] lg:right-0
+    }
+
+    .header_nav.open{
+        @apply w-[70%] right-0
+    }
+
+    .header_nav ul li {
+        @apply w-[100%] p-[2rem] my-[1rem] hover:bg-pink lg:p-0;
+    }
+
+    
+    .btn{
+        @apply inline-block py-[.5rem] px-[1rem] rounded-full bg-pink border-solid border-2 border-pink hover:bg-white hover:border-solid hover:border-2 hover:border-black;
+    }
+
+
+}
+
+
+
+
+
