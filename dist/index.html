@@ -11,9 +11,9 @@
 <body>
 
     <header class="header bg-black relative ">
-        <div class="container">
-            <div  class="header_wrapper flex justify-between">
-                <div class="branding flex items-center  lg:relative">
+        <div class="container lg:px-[10rem]">
+            <div  class="header_wrapper">
+                <div class="branding flex justify-between items-center  lg:relative">
                     <img src="./img/logo.png" alt="" class="w-[3.5rem]">
                     <div class="toggle_menu z-[999] lg:hidden">
                         <span></span>
@@ -21,7 +21,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="header_nav absolute bg-lightpink h-[92vh] top-[4.5rem] lg:static lg:h-0 lg:w-0  ">
+                <div class="header_nav absolute bg-lightpink h-[100vh] top-[4.5rem] lg:static lg:h-0 lg:w-0  ">
                     <div class="header_icons m-[2rem] lg:hidden lg:m-0">
                         <ul class="text-center">
                             <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -45,29 +45,337 @@
     </header>
 
     <section class="banner h-[100vh] flex justify-center items-center">
-        <div class="container">
+        <div class="container lg:px-[10rem]">
             <div class="banner_wrapper ">
-                <div class="banner_content">
-                    <div class="banner_text text-center items-center h-[25vh] font-semibold">
-                        <h4>HELLO!</h4>
-                        <h1 class="text-pink text-[2rem] my-[1.3rem]"><span class="text-[1rem] text-black">I AM </span>MARIA GILDA</h1>
-                        <h4>UX/UI Designer | Web Developer</h4>
+                <div class="banner_two lg:flex lg:items-center ">
+                    <div class="banner_img hidden lg:block">
+                    <img src="./img/pic in banner.png" alt="" class="lg:mb-[15rem] ">
+                </div>
+                <div class="banner_content lg:ml-[19rem] ">
+                    <div class="banner_text text-center items-center h-[25vh] font-semibold lg:text-[1.5rem]">
+                        <h4 class="lg:text-left">HELLO!</h4>
+                        <h1 class="text-pink text-[2rem] my-[1.3rem] lg:text-[4rem]"><span class="text-[1rem] text-black lg:text-[1.5rem]">I AM </span>MARIA GILDA</h1>
+                        <h4 class="lg:text-left">UX/UI Designer | Web Developer</h4> 
                     </div>
-                    <div class="cv text-center mb-[2rem]">
-                        <a href="#" class="btn">DOWNLOAD CV</a>
-                    </div>
-                    <div class="header_icons m-[2rem] ">
-                        <ul class="text-center mx-1rem">
-                            <a href="" class="mx-[1rem]"><i class="fa-brands fa-twitter"></i></a>
+                    
+                    <div class="header_icons m-[5rem] lg:ml-[0rem]  ">
+                        <ul class="text-center mx-1rem lg:text-left lg:ml- ">
+                            <a href="" class="mx-[1rem] lg:ml-0"><i class="fa-brands fa-twitter"></i></a>
                             <a href="" class="mr-[1rem]"><i class="fa-solid fa-envelope"></i></a>
                             <a href="" class="mr-[1rem]"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="" class="mr-[1rem]"><i class="fa-brands fa-github"></i></a>  
                         </ul>
                     </div>
+                    <div class="cv text-center lg:text-right mt-[2rem] ">
+                        <a href="#" class="btn ">DOWNLOAD CV</a>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="aboutme bg-lightpink">
+        <div class="container lg:px-[10rem]">
+            <div class="aboutme_wrapper">
+                <div class="aboutme_content lg:flex lg:flex-row-reverse lg:mb-[4.5rem]">
+                    <div class="aboutme_img w-[20rem] mx-auto pt-[4rem] lg:w-[70rem] lg:ml-[4.2rem]">
+                        <img src="./img/pic of about me.png" alt="">
+                    </div>
+                    <div class="aboutme_text text-center lg:text-left ">
+                        <div class="aboutme_title lg:mt-[15rem]">
+                            <h2 class="text-pink font-bold my-[2rem] lg:text-[2rem]"><span class="underline text-black">About</span> Me</h2>
+                        </div>
+                        <div class="aboutme_p text-justify lg:w-[40rem] lg:text-[1.2rem]">
+                            <p> I am just starting out in the field of web development. Typically have some basic knowledge of programming languages such as HTML, CSS, and JavaScript.  I am eager to learn and constantly seeking out new resources to improve their skills and expand my knowledge. With practice and dedication, a beginner web developer can become a proficient and successful professional in the industry.</p>
+                        </div>
+                        <div class="cv text-center lg:text-left my-[2rem] lg:mt-[7rem]">
+                            <a href="#" class="btn ">DOWNLOAD CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="services">
+        <div class="container lg:px-[10rem]">
+            <div class="services_wrapper"> 
+                <div class="services_text text-center my-[2rem]">
+                    <div class="services_title font-bold mb-[1rem] lg:text-[2rem]">
+                        <h2>MY SERVICES</h2>
+                    </div>
+                    <div class="services_p text-[.8rem] lg:text-[1rem]">
+                        <p>I offer top-quality web designing and web development services that meet your specific needs and requirements. I ensure that your website looks great, and provides an exceptional user experience.</p>
+                    </div>
+                </div>
+                <div class="services_card lg:flex lg:mb-[3rem]">
+                    <div class="services_item bg-lightpink shadow-lg shadow-black-500/50 py-[2rem] text-center">
+                        <div class="services_icon text-pink">
+                            <i class="fa-sharp fa-solid fa-pen-ruler text-[2.5rem]"></i>
+                        </div>
+                        <div class="services_item_title text-pink my-[1rem]">
+                            <h3>UX | UI DESIGNER</h3>
+                        </div>
+                        <div class="services_item_p text-justify mx-[2rem]">
+                            <p>UI Designers are responsible for the look and feel of a product, website, or app. They work with teams of product managers, UX designers, and developers to create high-fidelity screens and prototypes that represent how the product will look and function once it's released to the public. </p>
+                        </div>
+                    </div>
+                    <div class="services_item bg-lightpink shadow-lg shadow-black-500/50 py-[2rem] text-center my-[2rem] lg:my-0 lg:mx-[2rem]">
+                        <div class="services_icon text-pink">
+                            <i class="fa-sharp fa-solid fa-pen-ruler text-[2.5rem]"></i>
+                        </div>
+                        <div class="services_item_title text-pink my-[1rem]">
+                            <h3>UX | UI DESIGNER</h3>
+                        </div>
+                        <div class="services_item_p text-justify mx-[2rem]">
+                            <p>UI Designers are responsible for the look and feel of a product, website, or app. They work with teams of product managers, UX designers, and developers to create high-fidelity screens and prototypes that represent how the product will look and function once it's released to the public. </p>
+                        </div>
+                    </div>
+                    <div class="services_item bg-lightpink shadow-lg shadow-black-500/50 py-[2rem] text-center">
+                        <div class="services_icon text-pink">
+                            <i class="fa-sharp fa-solid fa-pen-ruler text-[2.5rem]"></i>
+                        </div>
+                        <div class="services_item_title text-pink my-[1rem]">
+                            <h3>UX | UI DESIGNER</h3>
+                        </div>
+                        <div class="services_item_p text-justify mx-[2rem]">
+                            <p>UI Designers are responsible for the look and feel of a product, website, or app. They work with teams of product managers, UX designers, and developers to create high-fidelity screens and prototypes that represent how the product will look and function once it's released to the public. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="works bg-lightpink">
+        <div class="container lg:px-[10rem]">
+            <div class="works_wrapper">
+                <div class="works_text text-center my-[2rem]">
+                    <div class="works_title font-bold mb-[1rem] lg:text-[2rem]">
+                        <h2>MY WORKS</h2>
+                    </div>
+                    <div class="works_p text-[.8rem] lg:text-[1rem] ">
+                        <p>Here are some examples of websites that I have developed. The web design used in this projects  was not designed by me, and credit goes to the original designer. This is a disclaimer to acknowledge that the design used is not of my own creation.</p>
+                    </div>
+                </div>
+                <div class="works_card_sass my-[3rem]">
+                    <h3 class="font-semibold border-white border-b-[5px] lg:text-center lg:text-[2rem]">SASS</h3>
+                <div class="works_card flex justify-between lg:justify-normal ">
+                    <div class="works_item  w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] lg:mr-[5rem]">
+                        <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                            <img src="./img/cvd.png" alt="">
+                        </div>
+                        <div class="works_card_title text-center">
+                            <h4 class="my-[1rem] lg:text-[1.2rem]">CREATIVE VISUAL DESIGN</h4>
+                            <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
+                        </div>
+                    </div>
+                    <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem]">
+                        <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                            <img src="./img/foodfactory.png" alt="">
+                        </div>
+                        <div class="works_card_title text-center">
+                            <h4 class="my-[1rem] lg:text-[1.2rem]">FOOD FACTORY WEBSITE</h4>
+                            <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_card flex justify-between lg:justify-normal">
+                    <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] lg:mr-[5rem]">
+                        <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                            <img src="./img/starbucks.png" alt="">
+                        </div>
+                        <div class="works_card_title text-center">
+                            <h4 class="my-[1rem] lg:text-[1.2rem]">STARBUCKS WEBSITE</h4>
+                            <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
+                        </div>
+                    </div>
+                    <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem]">
+                        <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                            <img src="./img/wondertour.png" alt="">
+                        </div>
+                        <div class="works_card_title text-center">
+                            <h4 class="my-[1rem] lg:text-[1.2rem]">WONDER TOUR WEBSITE</h4>
+                            <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
+                        </div>
+                    </div>   
+                </div>
+                </div>
+                <div class="works_card_wordpress my-[3rem]">
+                    <h3 class="font-semibold border-white border-b-[5px] lg:text-center lg:text-[2rem]">WORDPRESS</h3>
+                    <div class="works_card flex justify-between lg:justify-start">
+                        <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] lg:mr-[5rem]">
+                            <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                                <img src="./img/cvd.png" alt="">
+                            </div>
+                            <div class="works_card_title text-center">
+                                <h4 class="my-[1rem] lg:text-[1.2rem]">CREATIVE VISUAL DESIGN</h4>
+                                <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
+                            </div>
+                        </div>
+                        <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem]">
+                            <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                                <img src="./img/theblog.png" alt="">
+                            </div>
+                            <div class="works_card_title text-center">
+                                <h4 class="my-[1rem] lg:text-[1.2rem]">THE BLOG WEBSITE</h4>
+                                <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_card_tailwind">
+                    <h3 class="font-semibold border-white border-b-[5px] lg:text-center lg:text-[2rem]">TAILWIND CSS</h3>
+                    <div class="works_card flex justify-between">
+                        <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem]">
+                            <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                                <img src="./img/spotify.png" alt="">
+                            </div>
+                            <div class="works_card_title text-center">
+                                <h4 class="my-[1rem] lg:text-[1.2rem]">SPOTIFY WEBSITE</h4>
+                                <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills mb-[3rem]">
+        <div class="container lg:px-[10rem]">
+            <div class="skills_wrapper">
+                <div class="skills_text text-center my-[2rem]">
+                    <div class="skills_title font-bold mb-[1rem] lg:text-[2rem]">
+                        <h2>MY SKILLS</h2>
+                    </div>
+                    <div class="skills_p text-[.8rem] lg:text-[1rem]">
+                        <p>Developing a diverse set of skills enhances adaptability, improves problem-solving abilities, and increases the chances of achieving long-term career goals.</p>
+                    </div>
+                </div>
+                <div class="skills_cards lg:grid grid-rows-4 grid-flow-col gap-4">
+                    <div class="skills_item flex bg-lightpink lg:hover:bg-pink rounded-lg py-[.5rem] px-[1.5rem] items-center shadow-md mb-[1rem] lg:w-[35rem] ">
+                        <div class="skills_img w-[4.5rem] mr-[1rem]">
+                            <img src="./img/html 1.png" alt="">
+                        </div>
+                        <div class="skills_content text-[.9rem] text-justify">
+                            <p>HTML is crucial to the creation of websites, as it provides the structural framework for web pages.</p>
+                        </div>
+                    </div>
+                    <div class="skills_item flex bg-pink lg:hover:bg-lightpink rounded-lg py-[.5rem] px-[1.5rem] items-center shadow-md mb-[1rem] lg:w-[35rem]">
+                        <div class="skills_img w-[4.5rem] mr-[1rem]">
+                            <img src="./img/css 1.png" alt="">
+                        </div>
+                        <div class="skills_content text-[.9rem] text-justify">
+                            <p>CSS is essential for web design, customization of a website's appearance, layout, and overall style.</p>
+                        </div>
+                    </div>
+                    <div class="skills_item flex bg-lightpink lg:hover:bg-pink rounded-lg py-[.5rem] px-[1.5rem] items-center shadow-md mb-[1rem] lg:w-[35rem]">
+                        <div class="skills_img w-[4.5rem] mr-[1rem]">
+                            <img src="./img/javascript 1.png" alt="">
+                        </div>
+                        <div class="skills_content text-[.9rem] text-justify">
+                            <p>JavaScript is a fundamental programming language, as it allows for the creation of interactive.</p>
+                        </div>
+                    </div>
+                    <div class="skills_item flex bg-pink lg:hover:bg-lightpink rounded-lg py-[.5rem] px-[1.5rem] items-center shadow-md mb-[1rem] lg:w-[35rem]">
+                        <div class="skills_img w-[4.5rem] mr-[1rem]">
+                            <img src="./img/github 1.png" alt="">
+                        </div>
+                        <div class="skills_content text-[.9rem] text-justify">
+                            <p>GitHub facilitates collaborative software development and version control for programmers.</p>
+                        </div>
+                    </div>
+                    <div class="skills_item flex bg-lightpink lg:hover:bg-pink rounded-lg py-[.5rem] px-[1.5rem] items-center shadow-md mb-[1rem] lg:w-[35rem]">
+                        <div class="skills_img w-[4.5rem] mr-[1rem]">
+                            <img src="./img/sass 1.png" alt="">
+                        </div>
+                        <div class="skills_content text-[.9rem] text-justify">
+                            <p>Sass is an important tool for web developers as it extends the functionality of CSS making it easier.</p>
+                        </div>
+                    </div>
+                    <div class="skills_item flex bg-pink lg:hover:bg-lightpink rounded-lg py-[.5rem] px-[1.5rem] items-center shadow-md mb-[1rem] lg:w-[35rem]">
+                        <div class="skills_img w-[4.5rem] mr-[1rem]">
+                            <img src="./img/tailwind-removebg-preview 1.png" alt="">
+                        </div>
+                        <div class="skills_content text-[.9rem] text-justify">
+                            <p>Tailwind CSS is a popular utility-first CSS framework that simplifies and speeds up the process</p>
+                        </div>
+                    </div>
+                    <div class="skills_item flex bg-lightpink lg:hover:bg-pink rounded-lg py-[.5rem] px-[1.5rem] items-center shadow-md mb-[1rem] lg:w-[35rem]">
+                        <div class="skills_img w-[4.5rem] mr-[1rem]">
+                            <img src="./img/wordpress 1.png" alt="">
+                        </div>
+                        <div class="skills_content text-[.9rem] text-justify">
+                            <p>WordPress simplifies website creation and management for users without coding experience.</p>
+                        </div>
+                    </div>
+                    <div class="skills_item flex bg-pink lg:hover:bg-lightpink rounded-lg py-[.5rem] px-[1.5rem] items-center shadow-md mb-[1rem] lg:w-[35rem]">
+                        <div class="skills_img w-[4.5rem] mr-[1rem]">
+                            <img src="./img/image 1.png" alt="">
+                        </div>
+                        <div class="skills_content text-[.9rem] text-justify">
+                            <p>Figma streamlines UI/UX design collaboration and prototyping for teams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts bg-lightpink py-[3rem]">
+        <div class="container">
+            <div class="contacts_wrapper">
+                <div class="contact_form bg-black p-[2rem] border rounded-xl">
+                    <div class="contact_title text-white text-center my-[2rem] text-[1.8rem]">
+                        <h3>Get in Touch</h3>
+                    </div>
+                    <div class="contact_input">
+                        <form>
+                            <div class="mb-6">
+                              <input type="name" id="name" class=" border rounded-lg  w-full p-2.5" placeholder="Name:" required>
+                            </div>
+                            <div class="mb-6">
+                              <input type="email" id="email" class=" border rounded-lg  w-full p-2.5" placeholder="E-mail" required>
+                            </div>
+                            <div>
+                                <textarea id="message" rows="4" class="block p-2.5 w-full rounded-lg border" placeholder="Messages:"></textarea>
+                              </div>
+                              <div class="contact_btn text-center mt-[2rem]">
+                                <a href="#" class="btn ">SEND MESSAGE</a>
+                              </div>
+                          </form>
+                    </div>
+                </div>
+                <div class="contact_card bg-white text-center mx-auto p-[2rem] mt-[2rem] w-[23rem] border rounded-xl">
+                    <div class="contact_title my-[1rem]">
+                        <h3>Contact Me!</h3>
+                    </div>
+                    <div class="contact_item flex  items-center">
+                        <a href="#"><i class="fa-solid fa-map-pin text-[.8rem] mr-[1rem]"></i></a>
+                        <h4 class="text-[.8rem]">231 Brgy. San Juan, San Pablo City, Laguna 4000</h4>
+                    </div>
+                    <div class="contact_item flex  items-center">
+                        <a href="#"><i class="fa-solid fa-phone text-[.8rem] mr-[1rem]"></i></a>
+                        <h4 class="text-[.8rem]">+639467428008</h4>
+                    </div>
+                    <div class="contact_item flex  items-center">
+                        <a href="#"><i class="fa-solid fa-envelope text-[.8rem] mr-[1rem]"></i></a>
+                        <h4 class="text-[.8rem]">magildaceria@gmail.com</h4>
+                    </div>
+                    <div class="contact_item flex  items-center">
+                        <a href="#"><i class="fa-brands fa-github text-[.8rem] mr-[1rem]"></i></a>
+                        <h4 class="text-[.8rem]">@aaairam</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
 
     <script src="./script.js"></script>
 </body>
