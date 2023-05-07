@@ -38,7 +38,7 @@ html{
     }
 
     .header_icons ul a{
-        @apply justify-center items-center rounded-full bg-pink cursor-pointer p-[.5rem] hover:text-white
+        @apply justify-center items-center rounded-full bg-pink cursor-pointer p-[.7rem] px-[.8rem] hover:text-white
     }
 
     .header_nav {
@@ -58,8 +58,28 @@ html{
         @apply inline-block py-[.5rem] px-[1rem] rounded-full bg-pink border-solid border-2 border-pink hover:bg-white hover:border-solid hover:border-2 hover:border-black;
     }
 
-    
+    .works_card_title i{
+        @apply hover:text-black
+    }
 
+    .contact_items{
+        @apply lg:justify-around;
+    }
+
+    .contact_item{
+        @apply lg:text-center lg:mb-[1rem];
+    }
+
+    .contact_item h4{
+        @apply lg:text-[1.1rem];
+    }
+    .contact_item  i{
+        @apply lg:text-[1.4rem];
+    }
+
+    .footer_icons li{
+        @apply mr-[.5rem]
+    }
 
 }
 

@@ -21,9 +21,9 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="header_nav absolute bg-lightpink h-[100vh] top-[4.5rem] lg:static lg:h-0 lg:w-0  ">
-                    <div class="header_icons m-[2rem] lg:hidden lg:m-0">
-                        <ul class="text-center">
+                <div class="header_nav absolute bg-lightpink h-[1000vh] top-[4.5rem] lg:static lg:h-0 lg:w-0  ">
+                    <div class="header_icons m-[2rem]  lg:hidden lg:m-0">
+                        <ul class="text-center ">
                             <a href=""><i class="fa-brands fa-twitter"></i></a>
                             <a href=""><i class="fa-solid fa-envelope"></i></a>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -162,7 +162,7 @@
                 <div class="works_card_sass my-[3rem]">
                     <h3 class="font-semibold border-white border-b-[5px] lg:text-center lg:text-[2rem]">SASS</h3>
                 <div class="works_card flex justify-between lg:justify-normal ">
-                    <div class="works_item  w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] lg:mr-[5rem]">
+                    <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] lg:mr-[5rem]">
                         <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
                             <img src="./img/cvd.png" alt="">
                         </div>
@@ -325,57 +325,81 @@
     </section>
 
     <section class="contacts bg-lightpink py-[3rem]">
-        <div class="container">
+        <div class="container lg:px-[10rem]">
             <div class="contacts_wrapper">
-                <div class="contact_form bg-black p-[2rem] border rounded-xl">
-                    <div class="contact_title text-white text-center my-[2rem] text-[1.8rem]">
-                        <h3>Get in Touch</h3>
+                <div class="contact_cards lg:flex lg:flex-row-reverse">
+                    <div class="contact_form bg-black p-[2rem] lg:pl-[10rem] border rounded-xl lg:w-[50rem] lg:object-left lg:z-10">
+                        <div class="contact_title text-white text-center my-[2rem] text-[1.8rem] lg:text-left   ">
+                            <h3 class="lg:font-extrabold">Get in Touch</h3>
+                            <p class="text-[1rem]">Feel free to message me.</p>
+                        </div>
+                        <div class="contact_input">
+                            <form>
+                                <div class="mb-6">
+                                  <input type="name" id="name" class=" border rounded-lg  w-full p-2.5" placeholder="Name:" required>
+                                </div>
+                                <div class="mb-6">
+                                  <input type="email" id="email" class=" border rounded-lg  w-full p-2.5" placeholder="E-mail" required>
+                                </div>
+                                <div>
+                                    <textarea id="message" rows="4" class="block p-2.5 w-full rounded-lg border" placeholder="Messages:"></textarea>
+                                  </div>
+                                  <div class="contact_btn text-center mt-[2rem] lg:text-right">
+                                    <a href="#" class="btn ">SEND MESSAGE</a>
+                                  </div>
+                              </form>
+                        </div>
                     </div>
-                    <div class="contact_input">
-                        <form>
-                            <div class="mb-6">
-                              <input type="name" id="name" class=" border rounded-lg  w-full p-2.5" placeholder="Name:" required>
-                            </div>
-                            <div class="mb-6">
-                              <input type="email" id="email" class=" border rounded-lg  w-full p-2.5" placeholder="E-mail" required>
-                            </div>
-                            <div>
-                                <textarea id="message" rows="4" class="block p-2.5 w-full rounded-lg border" placeholder="Messages:"></textarea>
-                              </div>
-                              <div class="contact_btn text-center mt-[2rem]">
-                                <a href="#" class="btn ">SEND MESSAGE</a>
-                              </div>
-                          </form>
-                    </div>
-                </div>
-                <div class="contact_card bg-white text-center mx-auto p-[2rem] mt-[2rem] w-[23rem] border rounded-xl">
-                    <div class="contact_title my-[1rem]">
-                        <h3>Contact Me!</h3>
-                    </div>
-                    <div class="contact_item flex  items-center">
-                        <a href="#"><i class="fa-solid fa-map-pin text-[.8rem] mr-[1rem]"></i></a>
-                        <h4 class="text-[.8rem]">231 Brgy. San Juan, San Pablo City, Laguna 4000</h4>
-                    </div>
-                    <div class="contact_item flex  items-center">
-                        <a href="#"><i class="fa-solid fa-phone text-[.8rem] mr-[1rem]"></i></a>
-                        <h4 class="text-[.8rem]">+639467428008</h4>
-                    </div>
-                    <div class="contact_item flex  items-center">
-                        <a href="#"><i class="fa-solid fa-envelope text-[.8rem] mr-[1rem]"></i></a>
-                        <h4 class="text-[.8rem]">magildaceria@gmail.com</h4>
-                    </div>
-                    <div class="contact_item flex  items-center">
-                        <a href="#"><i class="fa-brands fa-github text-[.8rem] mr-[1rem]"></i></a>
-                        <h4 class="text-[.8rem]">@aaairam</h4>
+                    <div class="contact_card bg-white text-center mx-auto lg:m-0 p-[2rem] mt-[2rem] w-[23rem] border rounded-xl lg:h-[50vh] lg:my-auto">
+                        <div class="contact_title my-[1rem] lg:text-left lg:text-[2rem] lg:font-bold">
+                            <h3>Contact Me!</h3>
+                        </div>
+                       <div class="contact_items">
+                        <div class="contact_item flex  items-center">
+                            <a href="#"><i class="fa-solid fa-map-pin text-[.8rem] mr-[1rem]"></i></a>
+                            <h4 class="text-[.8rem] lg:text-left">Brgy. San Juan, San Pablo City, Laguna 4000</h4>
+                        </div>
+                        <div class="contact_item flex  items-center">
+                            <a href="#"><i class="fa-solid fa-phone text-[.8rem] mr-[1rem]"></i></a>
+                            <h4 class="text-[.8rem]">+639467428008</h4>
+                        </div>
+                        <div class="contact_item flex  items-center">
+                            <a href="#"><i class="fa-solid fa-envelope text-[.8rem] mr-[1rem]"></i></a>
+                            <h4 class="text-[.8rem]">magildaceria@gmail.com</h4>
+                        </div>
+                        <div class="contact_item flex  items-center">
+                            <a href="#"><i class="fa-brands fa-github text-[.8rem] mr-[1rem]"></i></a>
+                            <h4 class="text-[.8rem]">@aaairam</h4>
+                        </div>
+                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-
-
+    <footer class="footer bg-black h-[10vh]">
+        <div class="container py-[1.2rem] lg:px-[10rem]">
+            <div class="footer_wrapper">
+                <div class="footer_items flex justify-between place-content-center">
+                    <div class="footer_icons text-white">
+                        <ul class="flex text-[.7rem] lg:text-[1rem]">
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_address text-white text-[.7rem] lg:text-[1rem]">
+                        <p>BRGY. SAN JUAN SAN PABLO CITY, 4000</p>
+                    </div>
+                    <div class="footer_credits text-white text-[.7rem] lg:text-[1rem]">
+                        <p>© MARIAGILDACERIA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./script.js"></script>
 </body>
