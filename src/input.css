@@ -50,7 +50,7 @@ html{
     }
 
     .header_nav ul li {
-        @apply w-[100%] p-[2rem] my-[1rem] hover:bg-pink lg:p-0;
+        @apply w-[100%] p-[2rem] my-[1rem] hover:bg-pink lg:p-0 lg:hover:bg-black lg:hover:text-pink;
     }
 
     
@@ -61,6 +61,20 @@ html{
     .works_card_title i{
         @apply hover:text-black
     }
+
+    .works_item:hover .works_inside{
+    opacity:1;
+    }
+
+    .works_inside{
+    @apply text-white text-center p-[.5rem] lg:text-[2rem];
+    }
+
+
+    .works_inside_p {
+    @apply my-[1rem] ;
+    }
+
 
     .contact_items{
         @apply lg:justify-around;

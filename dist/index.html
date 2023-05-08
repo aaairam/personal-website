@@ -11,33 +11,35 @@
 <body>
 
     <header class="header bg-black relative ">
-        <div class="container lg:px-[10rem]">
-            <div  class="header_wrapper">
-                <div class="branding flex justify-between items-center  lg:relative">
-                    <img src="./img/logo.png" alt="" class="w-[3.5rem]">
-                    <div class="toggle_menu z-[999] lg:hidden">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+        <div class="container lg:px-[10rem] ">
+            <div  class="header_wrapper ">
+                <div class="header_content lg:flex   lg:relative">
+                    <div class="branding flex justify-between items-center   ">
+                        <img src="./img/logo.png" alt="" class="w-[3.5rem]">
+                        <div class="toggle_menu z-[999] lg:hidden">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="header_nav absolute bg-lightpink h-[1000vh] top-[4.5rem] lg:static lg:h-0 lg:w-0  ">
-                    <div class="header_icons m-[2rem]  lg:hidden lg:m-0">
-                        <ul class="text-center ">
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-solid fa-envelope"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                            <a href=""><i class="fa-brands fa-github"></i></a>  
-                        </ul>
-                    </div>
-                    <div class="header_nav_content">
-                        <ul class="text-center lg:flex lg:text-pink ">
-                            <li class=" bg-pink"><a href="">HOME</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">SERVICES</a></li>
-                            <li><a href="">SKILLS</a></li>
-                            <li><a href="">CONTACT</a></li>
-                        </ul>
+                    <div class="header_nav absolute bg-lightpink h-[100vh] top-[4.5rem] lg:static lg:h-0 lg:w-0  ">
+                        <div class="header_icons m-[2rem]  lg:hidden lg:m-0">
+                            <ul class="text-center ">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-github"></i></a>  
+                            </ul>
+                        </div>
+                        <div class="header_nav_content">
+                            <ul class="text-center lg:flex  lg:text-white lg:w-[30rem] lg:text-right ">
+                                <li class=" bg-pink lg:bg-black"><a href="">HOME</a></li>
+                                <li><a href="">ABOUT</a></li>
+                                <li><a href="">SERVICES</a></li>
+                                <li><a href="">SKILLS</a></li>
+                                <li><a href="">CONTACT</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,7 +165,7 @@
                     <h3 class="font-semibold border-white border-b-[5px] lg:text-center lg:text-[2rem]">SASS</h3>
                 <div class="works_card flex justify-between lg:justify-normal ">
                     <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] lg:mr-[5rem]">
-                        <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                        <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem] ">
                             <img src="./img/cvd.png" alt="">
                         </div>
                         <div class="works_card_title text-center">
@@ -205,17 +207,30 @@
                 <div class="works_card_wordpress my-[3rem]">
                     <h3 class="font-semibold border-white border-b-[5px] lg:text-center lg:text-[2rem]">WORDPRESS</h3>
                     <div class="works_card flex justify-between lg:justify-start">
-                        <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] lg:mr-[5rem]">
-                            <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                        <div class="works_item bg-white w-[16rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] lg:mr-[5rem]">
+                            <div class="works_img w-[13rem] mx-auto border-2 border-pink lg:w-[18rem]">
                                 <img src="./img/cvd.png" alt="">
                             </div>
                             <div class="works_card_title text-center">
                                 <h4 class="my-[1rem] lg:text-[1.2rem]">CREATIVE VISUAL DESIGN</h4>
                                 <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
                             </div>
+                            <div class="works_inside absolute top-0 right-0  bg-pink w-[15.5rem] h-[21vh] lg:w-[19.5rem] lg:h-[19.5rem]  border-4 border-white opacity-0">
+                                <div class="works_inside_text">
+                                    <div class="works_inside_title">
+                                        <h4>TAILWIND</h4>
+                                    </div>
+                                    <div class="works_inside_p text-[.8rem] text-justify lg:text-[1.1rem]">
+                                        <p>My first project was a personal blog that allowed me to develop my skills in web design and content creation, and provided me with valuable experience in managing and promoting an online presence.</p>
+                                    </div>
+                                    <div class="works_inside_icon">
+                                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem]">
-                            <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                        <div class="works_item bg-white w-[16rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem]">
+                            <div class="works_img w-[13rem] mx-auto border-2 border-pink lg:w-[18rem]">
                                 <img src="./img/theblog.png" alt="">
                             </div>
                             <div class="works_card_title text-center">
@@ -225,16 +240,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="works_card_tailwind">
-                    <h3 class="font-semibold border-white border-b-[5px] lg:text-center lg:text-[2rem]">TAILWIND CSS</h3>
-                    <div class="works_card flex justify-between">
-                        <div class="works_item bg-white w-[13rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem]">
-                            <div class="works_img w-[11rem] mx-auto border-2 border-pink lg:w-[18rem]">
-                                <img src="./img/spotify.png" alt="">
+                <div class="works_card_wordpress my-[3rem]">
+                    <h3 class="font-semibold border-white border-b-[5px] lg:text-center lg:text-[2rem]">WORDPRESS</h3>
+                    <div class="works_card flex justify-between lg:justify-start">
+                        <div class="works_item bg-white w-[16rem] mt-[2rem] py-[1rem] border-4 border-pink lg:w-[20rem] lg:h-[20rem] relative ">
+                            <div class="works_img w-[13rem] mx-auto border-2 border-pink lg:w-[18rem]">
+                                <img src="./img/cvd.png" alt="">
                             </div>
                             <div class="works_card_title text-center">
-                                <h4 class="my-[1rem] lg:text-[1.2rem]">SPOTIFY WEBSITE</h4>
+                                <h4 class="my-[1rem] lg:text-[1.2rem]">CREATIVE VISUAL DESIGN</h4>
                                 <a href="#"><i class="fa-brands fa-github text-pink lg:text-[2rem] "></i></a>
+                            </div>
+                            <div class="works_inside absolute top-0 right-0  bg-pink w-[15.5rem] h-[21vh] lg:w-[19.5rem] lg:h-[19.5rem]  border-4 border-white opacity-0">
+                                <div class="works_inside_text">
+                                    <div class="works_inside_title">
+                                        <h4>TAILWIND</h4>
+                                    </div>
+                                    <div class="works_inside_p text-[.8rem] text-justify lg:text-[1.1rem]">
+                                        <p>My first project was a personal blog that allowed me to develop my skills in web design and content creation, and provided me with valuable experience in managing and promoting an online presence.</p>
+                                    </div>
+                                    <div class="works_inside_icon">
+                                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -328,7 +356,7 @@
         <div class="container lg:px-[10rem]">
             <div class="contacts_wrapper">
                 <div class="contact_cards lg:flex lg:flex-row-reverse">
-                    <div class="contact_form bg-black p-[2rem] lg:pl-[10rem] border rounded-xl lg:w-[50rem] lg:object-left lg:z-10">
+                    <div class="contact_form bg-black p-[2rem] lg:pl-[10rem] border rounded-xl lg:w-[50rem] lg:object-left lg:relative">
                         <div class="contact_title text-white text-center my-[2rem] text-[1.8rem] lg:text-left   ">
                             <h3 class="lg:font-extrabold">Get in Touch</h3>
                             <p class="text-[1rem]">Feel free to message me.</p>
@@ -349,30 +377,31 @@
                                   </div>
                               </form>
                         </div>
+                        <div class="contact_card bg-white text-center mx-auto lg:m-0 p-[2rem] mt-[2rem] w-[23rem] lg:top-[1.5rem] lg:left-[-17rem] border rounded-xl lg:h-[50vh]  lg:absolute">
+                            <div class="contact_title my-[1rem] lg:text-left lg:text-[2rem] lg:font-bold">
+                                <h3>Contact Me!</h3>
+                            </div>
+                           <div class="contact_items">
+                            <div class="contact_item flex  items-center">
+                                <a href="#"><i class="fa-solid fa-map-pin text-[.8rem] mr-[1rem]"></i></a>
+                                <h4 class="text-[.8rem] lg:text-left">Brgy. San Juan, San Pablo City, Laguna 4000</h4>
+                            </div>
+                            <div class="contact_item flex  items-center">
+                                <a href="#"><i class="fa-solid fa-phone text-[.8rem] mr-[1rem]"></i></a>
+                                <h4 class="text-[.8rem]">+639467428008</h4>
+                            </div>
+                            <div class="contact_item flex  items-center">
+                                <a href="#"><i class="fa-solid fa-envelope text-[.8rem] mr-[1rem]"></i></a>
+                                <h4 class="text-[.8rem]">magildaceria@gmail.com</h4>
+                            </div>
+                            <div class="contact_item flex  items-center">
+                                <a href="#"><i class="fa-brands fa-github text-[.8rem] mr-[1rem]"></i></a>
+                                <h4 class="text-[.8rem]">@aaairam</h4>
+                            </div>
+                           </div>
+                        </div>
                     </div>
-                    <div class="contact_card bg-white text-center mx-auto lg:m-0 p-[2rem] mt-[2rem] w-[23rem] border rounded-xl lg:h-[50vh] lg:my-auto">
-                        <div class="contact_title my-[1rem] lg:text-left lg:text-[2rem] lg:font-bold">
-                            <h3>Contact Me!</h3>
-                        </div>
-                       <div class="contact_items">
-                        <div class="contact_item flex  items-center">
-                            <a href="#"><i class="fa-solid fa-map-pin text-[.8rem] mr-[1rem]"></i></a>
-                            <h4 class="text-[.8rem] lg:text-left">Brgy. San Juan, San Pablo City, Laguna 4000</h4>
-                        </div>
-                        <div class="contact_item flex  items-center">
-                            <a href="#"><i class="fa-solid fa-phone text-[.8rem] mr-[1rem]"></i></a>
-                            <h4 class="text-[.8rem]">+639467428008</h4>
-                        </div>
-                        <div class="contact_item flex  items-center">
-                            <a href="#"><i class="fa-solid fa-envelope text-[.8rem] mr-[1rem]"></i></a>
-                            <h4 class="text-[.8rem]">magildaceria@gmail.com</h4>
-                        </div>
-                        <div class="contact_item flex  items-center">
-                            <a href="#"><i class="fa-brands fa-github text-[.8rem] mr-[1rem]"></i></a>
-                            <h4 class="text-[.8rem]">@aaairam</h4>
-                        </div>
-                       </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
