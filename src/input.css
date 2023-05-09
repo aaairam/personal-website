@@ -72,12 +72,13 @@ html{
 
 
     .works_inside_p {
-    @apply my-[.5rem] ;
+    @apply my-[.5rem] lg:my-[2rem] lg:mx-[1rem] ;
     }
 
+    .works_inside_title{
+        @apply lg:text-[1.5rem];
+    }
    
-
-
     .contact_items{
         @apply lg:justify-around;
     }
